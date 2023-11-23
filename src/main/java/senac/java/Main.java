@@ -11,8 +11,9 @@ public class Main {
         ConexaoSQLServer conexao = new ConexaoSQLServer();
         conexao.conectar();
 
+        Servidor servidor = new Servidor();
+        servidor.servidor();
     }
+
 }
 
-//        Servidor servidor = new Servidor();
-//        servidor.servidor();

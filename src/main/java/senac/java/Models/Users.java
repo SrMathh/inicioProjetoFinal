@@ -5,10 +5,10 @@ import org.json.JSONObject;
 import java.util.List;
 
 public class Users {
-    int Id;
-    String name = "";
-    String email = "";
-    String password = "";
+    public int Id;
+    public String name = "";
+    public String email = "";
+    public String password = "";
     public Users(){
 
     }

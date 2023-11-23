@@ -11,9 +11,9 @@ public class ConexaoSQLServer {
         try{
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 
-            String url = "jdbc:sqlserver://localhost:1433;databaseName=Mteste";
-            String usuario = "SENACRJEDU/116128412023.1";
-            String senha = "senac@12841";
+            String url = "jdbc:sqlserver://localhost:1433;databaseName=Mteste;trustServerCertificate=true";
+            String usuario = "user";
+            String senha = "123456";
 
             conexao = DriverManager.getConnection(url, usuario, senha);
 
@@ -22,14 +22,15 @@ public class ConexaoSQLServer {
             }
         }catch (ClassNotFoundException | SQLException e){
             System.out.println("O erro foi; " + e);
-        }finally {
-            try {
-                if (conexao != null && !conexao.isClosed()){
-                    conexao.close();
-                }
-            }catch (SQLException e){
-                System.out.println();
-            }
         }
+//        finally {
+//            try {
+//                if (conexao != null && !conexao.isClosed()){
+//                    conexao.close();
+//                }
+//            }catch (SQLException e){
+//                System.out.println();
+//            }
+//        }
     }
 }

@@ -6,12 +6,12 @@ import java.util.Date;
 import java.util.List;
 
 public class Sales {
-    int Id;
-    String qntd = "";
-    double price = 0 ;
-    String name = "";
-    String categoria = "";
-    String dataPedido  = "true" ;
+   int Id;
+    public String qntd = "";
+    public double price = 0 ;
+    public String name = "";
+    public String categoria = "";
+    public String dataPedido  = "true" ;
 
     public  Sales(){
     }

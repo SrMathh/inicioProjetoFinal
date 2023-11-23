@@ -1,11 +1,9 @@
 package senac.java.Services;
 import org.json.JSONObject;
 import com.sun.net.httpserver.HttpExchange;
-import senac.java.Models.Users;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.List;
 
 public class Response {
     public static void enviarResponseJson(HttpExchange exchange, JSONObject response, Integer statuscode)throws IOException{

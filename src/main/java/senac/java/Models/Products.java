@@ -5,10 +5,10 @@ import org.json.JSONObject;
 import java.util.List;
 
 public class Products {
-    int Id;
-     String name = "";
-    String factory = "";
-    int quality = 0;
+   public int Id;
+    public  String name = "";
+    public String factory = "";
+    public int quality = 0;
 
     public  Products() {
     }
@@ -25,6 +25,7 @@ public class Products {
     public void setFactory(String factory) {this.factory = factory;}
     public  int getQuality(){return quality;}
     public void setQuality(int quality) {this.quality = quality;}
+
     public  JSONObject toJson(){
         JSONObject json = new JSONObject();
         json.put("nome", name);
